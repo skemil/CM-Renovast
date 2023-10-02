@@ -1503,6 +1503,10 @@ h1 {
   display: flex;
 }
 
+.faq-link-text {
+  display: block;
+}
+
 .fn-show-more {
   height: 20px;
   flex-direction: column;
