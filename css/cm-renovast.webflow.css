@@ -1628,8 +1628,9 @@ h1 {
 .fn-success-message {
   width: 100%;
   color: #0f1213;
-  background-color: #df0;
+  background-color: #ddd;
   border-radius: 8px;
+  padding: 0;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.3em;
@@ -1706,8 +1707,12 @@ h1 {
   border-color: #cdd3d2;
 }
 
-.fn-field-message:active, .fn-field-message:focus {
+.fn-field-message:active {
   border-color: #df0;
+}
+
+.fn-field-message:focus {
+  border-color: #747474;
 }
 
 .fn-field-message::-ms-input-placeholder {
@@ -1738,8 +1743,12 @@ h1 {
   border-color: #cdd3d2;
 }
 
-.fn-field:active, .fn-field:focus {
+.fn-field:active {
   border-color: #df0;
+}
+
+.fn-field:focus {
+  border-color: #747474;
 }
 
 .fn-field::-ms-input-placeholder {
@@ -2591,6 +2600,10 @@ h1 {
   color: #131331;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
+}
+
+.text-block-4 {
+  font-family: Montserrat, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
