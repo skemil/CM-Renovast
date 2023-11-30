@@ -7222,14 +7222,13 @@
       var lottie = _interopRequireWildcard(require_IX2Lottie());
       var spline = _interopRequireWildcard(require_IX2Spline());
       var variable = _interopRequireWildcard(require_IX2Variable());
-      var pluginMethodMap2 = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, {
+      var pluginMethodMap2 = exports.pluginMethodMap = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, {
         ...lottie
       }], [_constants.ActionTypeConsts.PLUGIN_SPLINE, {
         ...spline
       }], [_constants.ActionTypeConsts.PLUGIN_VARIABLE, {
         ...variable
       }]]);
-      exports.pluginMethodMap = pluginMethodMap2;
     }
   });
 
@@ -11799,8 +11798,7 @@
       var _IX2VanillaEngine = (init_IX2VanillaEngine(), __toCommonJS(IX2VanillaEngine_exports));
       var actions = _interopRequireWildcard((init_IX2EngineActions(), __toCommonJS(IX2EngineActions_exports)));
       exports.actions = actions;
-      var store = (0, _redux.createStore)(_IX2Reducer.default);
-      exports.store = store;
+      var store = exports.store = (0, _redux.createStore)(_IX2Reducer.default);
       function setEnv(env) {
         if (env()) {
           (0, _IX2VanillaEngine.observeRequests)(store);

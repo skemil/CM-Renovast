@@ -364,7 +364,6 @@ h1 {
 }
 
 .footer-brand-image {
-  filter: invert();
   margin-top: -30px;
 }
 
@@ -916,10 +915,6 @@ h1 {
 
 .html-embed-2 {
   display: none;
-}
-
-.image-13 {
-  filter: invert();
 }
 
 .fn-column-2 {
